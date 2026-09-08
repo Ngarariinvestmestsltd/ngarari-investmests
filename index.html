@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ngarari Investments Limited | Real Estate & Construction</title>
+
+  <meta name="description" content="Ngarari Investments Limited is a professional company in Mombasa, Kenya providing real estate, construction and debt collection services.">
+
+  <meta name="keywords" content="Ngarari Investments Limited, real estate Mombasa, construction Mombasa, property Kenya, debt collection Kenya">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #17213a;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.97);
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #17213a;
+    }
+
+    .logo span {
+      color: #b51f35;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #17213a;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #b51f35;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 160px 25px 80px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background:
+        linear-gradient(rgba(10,20,45,0.78), rgba(10,20,45,0.78)),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85")
+        center/cover;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #d6283f;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 35px;
+    }
+
+    .tagline {
+      letter-spacing: 4px;
+      font-size: 14px !important;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #b51f35;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #8f1729;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn-light:hover {
+      background: white;
+      color: #17213a;
+    }
+
+    section {
+      padding: 90px 25px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .services {
+      background: #f7f8fa;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-top: 4px solid #b51f35;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 400px;
+      background:
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85")
+        center/cover;
+      border-radius: 8px;
+    }
+
+    .about h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .value {
+      padding: 18px;
+      background: #f7f8fa;
+      border-left: 4px solid #b51f35;
+      font-weight: bold;
+    }
+
+    .projects {
+      background: #f7f8fa;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project div {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .contact {
+      background: #17213a;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title p {
+      color: #ddd;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin: 35px 0;
+    }
+
+    .contact-item {
+      font-size: 17px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #d6283f;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background: #0d1425;
+      color: #bbb;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      background: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 27px;
+      text-decoration: none;
+      z-index: 999;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    @media(max-width: 800px) {
+      nav ul {
+        display: none;
+      }
+
+      .cards,
+      .project-grid,
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .about-image {
+        min-height: 300px;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      NGARARI <span>INVESTMENTS</span>
+    </div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <p class="tagline">BUILDING VALUE. SECURING FUTURES.</p>
+
+    <h1>
+      NGARARI <span>INVESTMENTS</span> LIMITED
+    </h1>
+
+    <p>
+      Professional solutions in Real Estate, Construction
+      and Debt Collection.
+    </p>
+
+    <a href="#services" class="btn btn-primary">
+      EXPLORE OUR SERVICES
+    </a>
+
+    <a href="#contact" class="btn btn-light">
+      CONTACT US
+    </a>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Professional solutions designed around our clients.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🏠</div>
+        <h3>Real Estate</h3>
+
+        <p>
+          Property buying, selling, leasing and management
+          for residential, commercial and investment properties.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Enquire Now
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏗️</div>
+        <h3>Construction</h3>
+
+        <p>
+          Building construction, renovations, project management
+          and general contracting.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Discuss a Project
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="icon">💼</div>
+        <h3>Debt Collection</h3>
+
+        <p>
+          Ethical, efficient and professional debt recovery
+          solutions for businesses and individuals.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+
+    <div class="about">
+
+      <div class="about-image"></div>
+
+      <div>
+        <h2>About Ngarari Investments</h2>
+
+        <p>
+          Ngarari Investments Limited is a professional company
+          dedicated to delivering quality, reliable and
+          customer-focused solutions across real estate,
+          construction and debt collection.
+        </p>
+
+        <br>
+
+        <p>
+          We are committed to integrity, excellence and
+          client satisfaction in every service we provide.
+        </p>
+
+        <div class="values">
+          <div class="value">✓ Trust & Integrity</div>
+          <div class="value">✓ Professional Approach</div>
+          <div class="value">✓ Results Driven</div>
+          <div class="value">✓ Client Focused</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Projects</h2>
+      <p>Property and construction projects will appear here.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project"
+        style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85');">
+        <div>Luxury Properties</div>
+      </div>
+
+      <div class="project"
+        style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85');">
+        <div>Construction Projects</div>
+      </div>
+
+      <div class="project"
+        style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85');">
+        <div>Property Development</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Let's Work Together</h2>
+      <p>
+        Contact Ngarari Investments Limited for professional
+        real estate, construction and debt collection solutions.
+      </p>
+    </div>
+
+    <div class="contact-info">
+
+      <div class="contact-item">
+        <strong>LOCATION</strong>
+        Mombasa, Kenya
+      </div>
+
+      <div class="contact-item">
+        <strong>PHONE</strong>
+        +254 731 404 288
+      </div>
+
+      <div class="contact-item">
+        <strong>EMAIL</strong>
+        ngarariinvestmentsltd@gmail.com
+      </div>
+
+    </div>
+
+    <a href="mailto:ngarariinvestmentsltd@gmail.com"
+       class="btn btn-primary">
+      SEND US AN EMAIL
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Ngarari Investments Limited.
+  All Rights Reserved.
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/254731404288"
+   target="_blank"
+   title="Chat with us on WhatsApp">
+  ☎
+</a>
+
+</body>
+</html>
