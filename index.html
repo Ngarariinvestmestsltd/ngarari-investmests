@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ngarari Investments Limited | Real Estate & Construction</title>
+  <title>Ngarari Investments Limited | Property, Construction & Debt Recovery in Mombasa</title>
 
-  <meta name="description" content="Ngarari Investments Limited is a professional company in Mombasa, Kenya providing real estate, construction and debt collection services.">
+  <meta name="description" content="Ngarari Investments Limited provides property sales, property acquisition, rentals, construction, debt recovery, procurement and general supplies in Mombasa and across Kenya.">
 
-  <meta name="keywords" content="Ngarari Investments Limited, real estate Mombasa, construction Mombasa, property Kenya, debt collection Kenya">
+  <meta name="keywords" content="Ngarari Investments Limited, property Mombasa, real estate Mombasa, houses for sale Mombasa, houses for rent Mombasa, construction Mombasa, debt collection Kenya, debt recovery Mombasa, procurement Kenya">
+
+  <meta name="author" content="Ngarari Investments Limited">
+
+  <meta property="og:title" content="Ngarari Investments Limited">
+  <meta property="og:description" content="Property, construction, debt recovery, procurement and investment solutions in Kenya.">
+  <meta property="og:type" content="website">
 
   <style>
     * {
@@ -18,128 +24,192 @@
       scroll-behavior: smooth;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #17213a;
-      background: #ffffff;
-      line-height: 1.6;
+    :root {
+      --navy: #101b35;
+      --navy2: #172544;
+      --red: #b51f35;
+      --red2: #d6283f;
+      --light: #f5f7fa;
+      --gold: #c9a227;
+      --text: #18233d;
+      --muted: #657083;
+      --white: #ffffff;
     }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: white;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* HEADER */
     header {
       position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
-      background: rgba(255,255,255,0.97);
+      background: rgba(255,255,255,0.98);
       z-index: 1000;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 18px rgba(0,0,0,0.08);
     }
 
     nav {
       max-width: 1200px;
       margin: auto;
-      padding: 18px 25px;
+      padding: 14px 22px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
-    .logo {
-      font-size: 22px;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-box {
+      width: 48px;
+      height: 48px;
+      border: 2px solid var(--red);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: bold;
-      color: #17213a;
+      color: var(--red);
+      font-size: 17px;
+      background: white;
     }
 
-    .logo span {
-      color: #b51f35;
+    .brand-name {
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    .brand-name span {
+      display: block;
+      color: var(--red);
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-top: 3px;
     }
 
     nav ul {
-      display: flex;
       list-style: none;
-      gap: 25px;
+      display: flex;
+      gap: 22px;
+      align-items: center;
     }
 
-    nav a {
-      text-decoration: none;
-      color: #17213a;
+    nav ul a {
+      color: var(--navy);
       font-weight: 600;
+      font-size: 14px;
     }
 
-    nav a:hover {
-      color: #b51f35;
+    nav ul a:hover {
+      color: var(--red);
     }
 
+    .menu-btn {
+      display: none;
+      font-size: 27px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--navy);
+    }
+
+    /* HERO */
     .hero {
       min-height: 100vh;
-      padding: 160px 25px 80px;
+      padding: 150px 22px 90px;
       display: flex;
+      justify-content: center;
       align-items: center;
       text-align: center;
-      justify-content: center;
+      color: white;
+
       background:
-        linear-gradient(rgba(10,20,45,0.78), rgba(10,20,45,0.78)),
+        linear-gradient(rgba(8,17,38,0.80), rgba(8,17,38,0.84)),
         url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85")
         center/cover;
-      color: white;
     }
 
     .hero-content {
-      max-width: 900px;
+      max-width: 950px;
+    }
+
+    .eyebrow {
+      color: #f0d36b;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 7vw, 78px);
-      letter-spacing: 2px;
-      margin-bottom: 20px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
     }
 
     .hero h1 span {
-      color: #d6283f;
+      color: #e33a51;
     }
 
     .hero p {
-      font-size: 21px;
-      margin-bottom: 35px;
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto 32px;
+      color: #f1f3f7;
     }
 
-    .tagline {
-      letter-spacing: 4px;
-      font-size: 14px !important;
-      font-weight: bold;
+    .hero-buttons {
+      margin-top: 10px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 28px;
+      padding: 14px 25px;
       margin: 6px;
-      text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      border-radius: 3px;
-      transition: 0.3s;
+      transition: 0.25s;
     }
 
     .btn-primary {
-      background: #b51f35;
+      background: var(--red);
       color: white;
     }
 
     .btn-primary:hover {
-      background: #8f1729;
+      background: #8e182a;
       transform: translateY(-2px);
     }
 
-    .btn-light {
+    .btn-outline {
       border: 1px solid white;
       color: white;
     }
 
-    .btn-light:hover {
+    .btn-outline:hover {
       background: white;
-      color: #17213a;
+      color: var(--navy);
     }
 
+    /* GENERAL */
     section {
-      padding: 90px 25px;
+      padding: 90px 22px;
     }
 
     .container {
@@ -149,195 +219,481 @@
 
     .section-title {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
 
     .section-title h2 {
       font-size: 40px;
-      margin-bottom: 10px;
+      line-height: 1.2;
+      margin-bottom: 12px;
     }
 
     .section-title p {
-      color: #666;
+      color: var(--muted);
+      max-width: 720px;
+      margin: auto;
     }
 
+    /* TRUST STRIP */
+    .trust {
+      background: var(--navy);
+      color: white;
+      padding: 25px 20px;
+    }
+
+    .trust-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 20px;
+      color: #f0d36b;
+    }
+
+    .trust-item span {
+      font-size: 13px;
+      color: #d7dce7;
+    }
+
+    /* SERVICES */
     .services {
-      background: #f7f8fa;
+      background: var(--light);
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(3,1fr);
+      gap: 24px;
     }
 
     .card {
       background: white;
-      padding: 40px 30px;
-      border-radius: 8px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-      border-top: 4px solid #b51f35;
-      transition: 0.3s;
+      padding: 32px 27px;
+      border-radius: 9px;
+      box-shadow: 0 7px 28px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--red);
+      transition: 0.25s;
     }
 
     .card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
     }
 
-    .card .icon {
-      font-size: 42px;
-      margin-bottom: 15px;
+    .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
     }
 
     .card h3 {
-      font-size: 24px;
-      margin-bottom: 15px;
+      font-size: 22px;
+      margin-bottom: 10px;
     }
 
     .card p {
-      color: #666;
-      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 16px;
     }
 
+    .small-link {
+      color: var(--red);
+      font-weight: bold;
+    }
+
+    /* ABOUT */
     .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 55px;
       align-items: center;
     }
 
     .about-image {
-      min-height: 400px;
+      min-height: 430px;
+      border-radius: 10px;
       background:
+        linear-gradient(rgba(10,20,45,0.15),rgba(10,20,45,0.15)),
         url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85")
         center/cover;
-      border-radius: 8px;
     }
 
     .about h2 {
-      font-size: 42px;
+      font-size: 40px;
+      line-height: 1.2;
       margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #596477;
     }
 
     .values {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px;
+      gap: 12px;
       margin-top: 25px;
     }
 
     .value {
-      padding: 18px;
-      background: #f7f8fa;
-      border-left: 4px solid #b51f35;
+      padding: 14px;
+      background: var(--light);
+      border-left: 4px solid var(--red);
       font-weight: bold;
-    }
-
-    .projects {
-      background: #f7f8fa;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .project {
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 8px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .project div {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 20px;
-      color: white;
-      background: linear-gradient(transparent, rgba(0,0,0,0.8));
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .contact {
-      background: #17213a;
-      color: white;
-      text-align: center;
-    }
-
-    .contact .section-title p {
-      color: #ddd;
-    }
-
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      flex-wrap: wrap;
-      margin: 35px 0;
-    }
-
-    .contact-item {
-      font-size: 17px;
-    }
-
-    .contact-item strong {
-      display: block;
-      color: #d6283f;
-      margin-bottom: 5px;
-    }
-
-    footer {
-      background: #0d1425;
-      color: #bbb;
-      text-align: center;
-      padding: 25px;
       font-size: 14px;
     }
 
+    /* PROPERTY */
+    .property {
+      background: #fff;
+    }
+
+    .property-box {
+      background: var(--navy);
+      color: white;
+      border-radius: 12px;
+      padding: 50px 35px;
+      text-align: center;
+    }
+
+    .property-box h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .property-box p {
+      max-width: 760px;
+      margin: auto auto 25px;
+      color: #dce2ed;
+    }
+
+    .property-options {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 12px;
+      max-width: 850px;
+      margin: 25px auto;
+    }
+
+    .property-option {
+      background: white;
+      color: var(--navy);
+      padding: 16px 10px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* PRICING */
+    .pricing {
+      background: var(--light);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 22px;
+    }
+
+    .price-card {
+      background: white;
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 5px 22px rgba(0,0,0,0.06);
+    }
+
+    .price-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: var(--red);
+      font-weight: bold;
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .price-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .notice {
+      margin-top: 25px;
+      padding: 18px;
+      background: #fff8df;
+      border-left: 4px solid var(--gold);
+      color: #5b4a16;
+      font-size: 14px;
+    }
+
+    /* ENQUIRY BOT */
+    .assistant {
+      background: white;
+    }
+
+    .assistant-box {
+      max-width: 800px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+      border: 1px solid #e3e7ee;
+    }
+
+    .assistant-head {
+      background: var(--navy);
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .assistant-head h3 {
+      font-size: 24px;
+    }
+
+    .assistant-head p {
+      color: #cbd2df;
+      font-size: 14px;
+    }
+
+    .chat {
+      padding: 25px;
+      min-height: 310px;
+    }
+
+    .bot-message {
+      background: var(--light);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      max-width: 90%;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .choices {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .choice {
+      border: 1px solid #ccd3df;
+      background: white;
+      padding: 10px 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .choice:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .form-group {
+      margin-bottom: 13px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd3df;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    .form-group textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    /* LOCATION */
+    .location {
+      background: var(--light);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .location-card {
+      background: white;
+      padding: 30px;
+      border-radius: 9px;
+    }
+
+    .location-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .contact-line {
+      margin: 12px 0;
+    }
+
+    .contact-line strong {
+      display: block;
+      color: var(--red);
+    }
+
+    .map {
+      min-height: 330px;
+      border-radius: 9px;
+      overflow: hidden;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 330px;
+      border: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #091126;
+      color: #b9c1cf;
+      text-align: center;
+      padding: 28px 20px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* WHATSAPP */
     .whatsapp {
       position: fixed;
-      right: 22px;
-      bottom: 22px;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
       background: #25D366;
       color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 27px;
-      text-decoration: none;
+      justify-content: center;
+      font-size: 29px;
       z-index: 999;
       box-shadow: 0 5px 20px rgba(0,0,0,0.25);
     }
 
-    @media(max-width: 800px) {
+    /* MOBILE */
+    @media(max-width: 850px) {
+
+      nav {
+        position: relative;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
       nav ul {
         display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        width: 100%;
+        border-top: 1px solid #eee;
+      }
+
+      nav ul a {
+        display: block;
+        padding: 14px 22px;
       }
 
       .cards,
-      .project-grid,
-      .about {
+      .about,
+      .pricing-grid,
+      .location-grid {
         grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .property-options {
+        grid-template-columns: 1fr 1fr;
       }
 
       .hero h1 {
         font-size: 43px;
       }
 
-      .about-image {
-        min-height: 300px;
+      .hero p {
+        font-size: 17px;
       }
 
       section {
-        padding: 70px 20px;
+        padding: 70px 18px;
+      }
+
+      .section-title h2,
+      .about h2 {
+        font-size: 32px;
+      }
+
+      .about-image {
+        min-height: 300px;
+      }
+    }
+
+    @media(max-width: 480px) {
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .logo-box {
+        width: 42px;
+        height: 42px;
+      }
+
+      .trust-grid,
+      .property-options,
+      .values {
+        grid-template-columns: 1fr;
+      }
+
+      .property-box {
+        padding: 35px 20px;
+      }
+
+      .property-box h2 {
+        font-size: 29px;
       }
     }
   </style>
@@ -345,104 +701,93 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
   <nav>
-    <div class="logo">
-      NGARARI <span>INVESTMENTS</span>
+
+    <div class="brand">
+      <!-- Replace the NI letters below with your real logo later -->
+      <div class="logo-box">NI</div>
+
+      <div class="brand-name">
+        NGARARI INVESTMENTS
+        <span>LIMITED</span>
+      </div>
     </div>
 
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul id="navMenu">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="#property" onclick="closeMenu()">Property</a></li>
+      <li><a href="#pricing" onclick="closeMenu()">Fees</a></li>
+      <li><a href="#assistant" onclick="closeMenu()">Get a Quote</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
     </ul>
+
   </nav>
 </header>
+
 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-content">
 
-    <p class="tagline">BUILDING VALUE. SECURING FUTURES.</p>
+    <div class="eyebrow">BUILDING VALUE. SECURING FUTURES.</div>
 
     <h1>
       NGARARI <span>INVESTMENTS</span> LIMITED
     </h1>
 
     <p>
-      Professional solutions in Real Estate, Construction
-      and Debt Collection.
+      Professional property, construction, debt recovery,
+      procurement and investment solutions serving clients
+      in Mombasa and across Kenya.
     </p>
 
-    <a href="#services" class="btn btn-primary">
-      EXPLORE OUR SERVICES
-    </a>
+    <div class="hero-buttons">
+      <a href="#assistant" class="btn btn-primary">
+        GET A QUOTE
+      </a>
 
-    <a href="#contact" class="btn btn-light">
-      CONTACT US
-    </a>
+      <a href="#services" class="btn btn-outline">
+        OUR SERVICES
+      </a>
+    </div>
 
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>Our Services</h2>
-      <p>Professional solutions designed around our clients.</p>
+<!-- TRUST -->
+<section class="trust">
+  <div class="trust-grid">
+
+    <div class="trust-item">
+      <strong>Property</strong>
+      <span>Sales, Acquisition & Rentals</span>
     </div>
 
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">🏠</div>
-        <h3>Real Estate</h3>
-
-        <p>
-          Property buying, selling, leasing and management
-          for residential, commercial and investment properties.
-        </p>
-
-        <a href="#contact" class="btn btn-primary">
-          Enquire Now
-        </a>
-      </div>
-
-      <div class="card">
-        <div class="icon">🏗️</div>
-        <h3>Construction</h3>
-
-        <p>
-          Building construction, renovations, project management
-          and general contracting.
-        </p>
-
-        <a href="#contact" class="btn btn-primary">
-          Discuss a Project
-        </a>
-      </div>
-
-      <div class="card">
-        <div class="icon">💼</div>
-        <h3>Debt Collection</h3>
-
-        <p>
-          Ethical, efficient and professional debt recovery
-          solutions for businesses and individuals.
-        </p>
-
-        <a href="#contact" class="btn btn-primary">
-          Contact Us
-        </a>
-      </div>
-
+    <div class="trust-item">
+      <strong>Recovery</strong>
+      <span>Professional Debt Collection</span>
     </div>
+
+    <div class="trust-item">
+      <strong>Construction</strong>
+      <span>Building & Related Works</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Procurement</strong>
+      <span>Supplies & Sourcing Solutions</span>
+    </div>
+
   </div>
 </section>
+
 
 <!-- ABOUT -->
 <section id="about">
@@ -453,115 +798,572 @@
       <div class="about-image"></div>
 
       <div>
-        <h2>About Ngarari Investments</h2>
+
+        <div class="eyebrow" style="color:#b51f35;">
+          ABOUT US
+        </div>
+
+        <h2>Solutions Built Around Your Needs</h2>
 
         <p>
-          Ngarari Investments Limited is a professional company
-          dedicated to delivering quality, reliable and
-          customer-focused solutions across real estate,
-          construction and debt collection.
+          Ngarari Investments Limited provides integrated
+          solutions across property, construction, debt
+          recovery, procurement and general supplies.
         </p>
 
         <br>
 
         <p>
-          We are committed to integrity, excellence and
-          client satisfaction in every service we provide.
+          Our approach is built around professionalism,
+          transparency, responsiveness and understanding
+          each client's specific requirements.
         </p>
 
         <div class="values">
-          <div class="value">✓ Trust & Integrity</div>
-          <div class="value">✓ Professional Approach</div>
-          <div class="value">✓ Results Driven</div>
+          <div class="value">✓ Professional Service</div>
           <div class="value">✓ Client Focused</div>
+          <div class="value">✓ Integrity & Transparency</div>
+          <div class="value">✓ Results Driven</div>
         </div>
+
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="projects" id="projects">
+
+<!-- SERVICES -->
+<section class="services" id="services">
   <div class="container">
 
     <div class="section-title">
-      <h2>Our Projects</h2>
-      <p>Property and construction projects will appear here.</p>
-    </div>
-
-    <div class="project-grid">
-
-      <div class="project"
-        style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85');">
-        <div>Luxury Properties</div>
-      </div>
-
-      <div class="project"
-        style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85');">
-        <div>Construction Projects</div>
-      </div>
-
-      <div class="project"
-        style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85');">
-        <div>Property Development</div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Let's Work Together</h2>
+      <h2>Our Services</h2>
       <p>
-        Contact Ngarari Investments Limited for professional
-        real estate, construction and debt collection solutions.
+        Practical solutions for individuals, businesses,
+        institutions and property investors.
       </p>
     </div>
 
-    <div class="contact-info">
+    <div class="cards">
 
-      <div class="contact-item">
-        <strong>LOCATION</strong>
-        Mombasa, Kenya
+      <div class="card">
+        <div class="icon">🏠</div>
+        <h3>Real Estate</h3>
+        <p>
+          Property buying, selling, acquisition, rentals
+          and property-related assistance for residential,
+          commercial and investment needs.
+        </p>
+        <a class="small-link" href="#assistant">Enquire →</a>
       </div>
 
-      <div class="contact-item">
-        <strong>PHONE</strong>
-        +254 731 404 288
+      <div class="card">
+        <div class="icon">🔑</div>
+        <h3>Rentals & Management</h3>
+        <p>
+          Assistance with rental property searches,
+          landlord requirements and property management
+          solutions.
+        </p>
+        <a class="small-link" href="#assistant">Enquire →</a>
       </div>
 
-      <div class="contact-item">
-        <strong>EMAIL</strong>
-        ngarariinvestmentsltd@gmail.com
+      <div class="card">
+        <div class="icon">💼</div>
+        <h3>Debt Recovery</h3>
+        <p>
+          Professional debt collection and recovery
+          support for companies, banks, SACCOs,
+          microfinance institutions and other organizations.
+        </p>
+        <a class="small-link" href="#assistant">Request Assistance →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏗️</div>
+        <h3>Construction</h3>
+        <p>
+          Building works, renovations, repairs,
+          construction-related activities and project
+          support based on the client's requirements.
+        </p>
+        <a class="small-link" href="#assistant">Discuss Project →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">📦</div>
+        <h3>Procurement & Supplies</h3>
+        <p>
+          Sourcing and supply support for organizations,
+          businesses and projects requiring reliable
+          procurement solutions.
+        </p>
+        <a class="small-link" href="#assistant">Request Quote →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Investment Support</h3>
+        <p>
+          Assistance in identifying property and
+          investment opportunities according to client
+          requirements and budget.
+        </p>
+        <a class="small-link" href="#assistant">Start Enquiry →</a>
       </div>
 
     </div>
+  </div>
+</section>
 
-    <a href="mailto:ngarariinvestmentsltd@gmail.com"
-       class="btn btn-primary">
-      SEND US AN EMAIL
-    </a>
+
+<!-- PROPERTY -->
+<section class="property" id="property">
+  <div class="container">
+
+    <div class="property-box">
+
+      <div class="eyebrow">PROPERTY SOLUTIONS</div>
+
+      <h2>Looking to Buy, Rent or Sell?</h2>
+
+      <p>
+        We assist clients in identifying suitable property
+        opportunities and connecting requirements with
+        available properties through our network and
+        industry relationships.
+      </p>
+
+      <div class="property-options">
+        <div class="property-option">🏠 Buy</div>
+        <div class="property-option">🔑 Rent</div>
+        <div class="property-option">💰 Sell</div>
+        <div class="property-option">📈 Invest</div>
+      </div>
+
+      <a href="#assistant" class="btn btn-primary">
+        TELL US WHAT YOU NEED
+      </a>
+
+    </div>
 
   </div>
 </section>
 
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Service Fees & Quotations</h2>
+      <p>
+        Our fees are determined according to the nature,
+        size, location and complexity of each assignment.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <h3>🏠 Property Services</h3>
+        <div class="price">Quotation / Agreement Based</div>
+        <p>
+          Property-related fees depend on the property,
+          location, transaction type and agreed scope of
+          service.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>🔑 Rental & Management</h3>
+        <div class="price">From an agreed management fee</div>
+        <p>
+          Management and rental-related charges depend on
+          the property, rent value and services required.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>💼 Debt Recovery</h3>
+        <div class="price">Success / Assignment Based</div>
+        <p>
+          Recovery charges may depend on the amount owed,
+          age of the debt, number of accounts, location and
+          complexity of recovery.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>🏗️ Construction</h3>
+        <div class="price">Project-Specific Quotation</div>
+        <p>
+          Construction quotations depend on drawings,
+          specifications, materials, location, labour,
+          scope and project requirements.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>📦 Procurement & Supplies</h3>
+        <div class="price">Item & Quantity Based</div>
+        <p>
+          Pricing depends on the requested goods,
+          quantities, specifications, delivery location
+          and supplier costs.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>📊 Investment Support</h3>
+        <div class="price">Consultation / Assignment Based</div>
+        <p>
+          Fees depend on the nature of the research,
+          sourcing, advisory or investment-support service.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      <strong>Important:</strong>
+      Prices and fees can vary according to the property,
+      location, workload, project scope, materials,
+      recovery complexity and other requirements.
+      Contact us for a tailored quotation before committing
+      to any service.
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ENQUIRY ASSISTANT -->
+<section class="assistant" id="assistant">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Get a Quote or Make an Enquiry</h2>
+      <p>
+        Answer a few questions and we'll prepare your
+        enquiry for direct WhatsApp communication.
+      </p>
+    </div>
+
+    <div class="assistant-box">
+
+      <div class="assistant-head">
+        <h3>🤖 Ngarari Investment Assistant</h3>
+        <p>Let's understand what you need.</p>
+      </div>
+
+      <div class="chat" id="chat">
+
+        <div class="bot-message">
+          <div class="question">
+            Hello! 👋 What service can we help you with?
+          </div>
+
+          <div class="choices">
+
+            <button class="choice" onclick="startEnquiry('Property Purchase')">
+              🏠 Buy Property
+            </button>
+
+            <button class="choice" onclick="startEnquiry('Property Rental')">
+              🔑 Rent Property
+            </button>
+
+            <button class="choice" onclick="startEnquiry('Sell Property')">
+              💰 Sell Property
+            </button>
+
+            <button class="choice" onclick="startEnquiry('Debt Recovery')">
+              💼 Debt Recovery
+            </button>
+
+            <button class="choice" onclick="startEnquiry('Construction')">
+              🏗️ Construction
+            </button>
+
+            <button class="choice" onclick="startEnquiry('Procurement & Supplies')">
+              📦 Procurement
+            </button>
+
+            <button class="choice" onclick="startEnquiry('Investment Support')">
+              📊 Investment
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="location" id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Visit or Contact Us</h2>
+      <p>
+        We are available to discuss your property,
+        construction, recovery and procurement requirements.
+      </p>
+    </div>
+
+    <div class="location-grid">
+
+      <div class="location-card">
+
+        <h3>📍 Ngarari Investments Limited</h3>
+
+        <div class="contact-line">
+          <strong>OFFICE</strong>
+          TSS Building, 7th Floor, Mombasa, Kenya
+        </div>
+
+        <div class="contact-line">
+          <strong>PHONE</strong>
+          <a href="tel:+254716452762">0716 452 762</a><br>
+          <a href="tel:+254731404288">0731 404 288</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>EMAIL</strong>
+          <a href="mailto:ngarariinvestmentsltd@gmail.com">
+            ngarariinvestmentsltd@gmail.com
+          </a>
+        </div>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/254731404288?text=Hello%20Ngarari%20Investments%20Ltd.%20I%20would%20like%20to%20make%20an%20enquiry."
+          target="_blank">
+          💬 CHAT ON WHATSAPP
+        </a>
+
+      </div>
+
+      <div class="map">
+
+        <iframe
+          src="https://www.google.com/maps?q=TSS%20Building%20Mombasa%20Kenya&output=embed"
+          loading="lazy">
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Ngarari Investments Limited.
-  All Rights Reserved.
+
+  <p>
+    <strong>NGARARI INVESTMENTS LIMITED</strong>
+  </p>
+
+  <p>
+    Property • Construction • Debt Recovery • Procurement
+  </p>
+
+  <p>
+    © 2026 Ngarari Investments Limited. All Rights Reserved.
+  </p>
+
 </footer>
 
-<a class="whatsapp"
-   href="https://wa.me/254731404288"
-   target="_blank"
-   title="Chat with us on WhatsApp">
-  ☎
+
+<!-- WHATSAPP -->
+<a
+  class="whatsapp"
+  href="https://wa.me/254731404288?text=Hello%20Ngarari%20Investments%20Limited.%20I%20would%20like%20to%20make%20an%20enquiry."
+  target="_blank"
+  title="Chat with Ngarari Investments on WhatsApp">
+  💬
 </a>
+
+
+<script>
+
+  /* MOBILE MENU */
+
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+  }
+
+  function closeMenu() {
+    document.getElementById("navMenu").classList.remove("show");
+  }
+
+
+  /* ENQUIRY ASSISTANT */
+
+  let enquiry = {
+    service: "",
+    details: "",
+    location: "",
+    budget: "",
+    name: "",
+    phone: ""
+  };
+
+
+  function startEnquiry(service) {
+
+    enquiry.service = service;
+
+    const chat = document.getElementById("chat");
+
+    chat.innerHTML = `
+      <div class="bot-message">
+        <div class="question">
+          You selected: ${service}
+        </div>
+
+        <p style="margin-bottom:15px;">
+          Which location are you interested in?
+        </p>
+
+        <div class="choices">
+          <button class="choice" onclick="setLocation('Mombasa')">Mombasa</button>
+          <button class="choice" onclick="setLocation('Kilifi')">Kilifi</button>
+          <button class="choice" onclick="setLocation('Kwale')">Kwale</button>
+          <button class="choice" onclick="setLocation('Nairobi')">Nairobi</button>
+          <button class="choice" onclick="setLocation('Other Kenya Location')">Other</button>
+        </div>
+      </div>
+    `;
+  }
+
+
+  function setLocation(location) {
+
+    enquiry.location = location;
+
+    const chat = document.getElementById("chat");
+
+    chat.innerHTML = `
+      <div class="bot-message">
+
+        <div class="question">
+          Location: ${location}
+        </div>
+
+        <p style="margin-bottom:15px;">
+          What is your approximate budget or value involved?
+        </p>
+
+        <div class="choices">
+
+          <button class="choice" onclick="setBudget('Below KSh 100,000')">
+            Below KSh 100,000
+          </button>
+
+          <button class="choice" onclick="setBudget('KSh 100,000 - 500,000')">
+            KSh 100K - 500K
+          </button>
+
+          <button class="choice" onclick="setBudget('KSh 500,000 - 1 Million')">
+            KSh 500K - 1M
+          </button>
+
+          <button class="choice" onclick="setBudget('KSh 1 Million - 5 Million')">
+            KSh 1M - 5M
+          </button>
+
+          <button class="choice" onclick="setBudget('Above KSh 5 Million')">
+            Above KSh 5M
+          </button>
+
+          <button class="choice" onclick="setBudget('To be discussed')">
+            Not sure / Discuss
+          </button>
+
+        </div>
+
+      </div>
+    `;
+  }
+
+
+  function setBudget(budget) {
+
+    enquiry.budget = budget;
+
+    const chat = document.getElementById("chat");
+
+    chat.innerHTML = `
+      <div class="bot-message">
+
+        <div class="question">
+          Almost done! Please give us your contact details.
+        </div>
+
+        <div class="form-group">
+          <label>Your Name</label>
+          <input id="clientName" type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label>Phone / WhatsApp Number</label>
+          <input id="clientPhone" type="tel" placeholder="e.g. 0712345678">
+        </div>
+
+        <div class="form-group">
+          <label>Additional Details</label>
+          <textarea id="clientDetails" placeholder="Tell us anything else we should know..."></textarea>
+        </div>
+
+        <button class="btn btn-primary" onclick="sendEnquiry()">
+          SEND ENQUIRY ON WHATSAPP
+        </button>
+
+      </div>
+    `;
+  }
+
+
+  function sendEnquiry() {
+
+    enquiry.name = document.getElementById("clientName").value.trim();
+    enquiry.phone = document.getElementById("clientPhone").value.trim();
+    enquiry.details = document.getElementById("clientDetails").value.trim();
+
+    if (!enquiry.name || !enquiry.phone) {
+
+      alert("Please enter your name and phone number.");
+
+      return;
+    }
+
+    const message =
+      "Hello Ngarari Investments Limited.%0A%0A" +
+      "*NEW WEBSITE ENQUIRY*%0A%0A" +
+      "*Service:* " + encodeURIComponent(enquiry.service) + "%0A" +
+      "*Location:* " + encodeURIComponent(enquiry.location) + "%0A" +
+      "*Budget / Value:* " + encodeURIComponent(enquiry.budget) + "%0A" +
+      "*Name:* " + encodeURIComponent(enquiry.name) + "%0A" +
+      "*Phone:* " + encodeURIComponent(enquiry.phone) + "%0A" +
+      "*Additional Details:* " + encodeURIComponent(enquiry.details);
+
+    window.open(
+      "https://wa.me/254731404288?text=" + message,
+      "_blank"
+    );
+  }
+
+</script>
 
 </body>
 </html>
